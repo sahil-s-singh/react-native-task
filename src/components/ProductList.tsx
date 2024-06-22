@@ -7,6 +7,8 @@ import { theme } from '../theme';
 const ProductList: React.FC = () => {
   const { products, loading } = useProducts();
 
+
+  // Here another error state can be added and a nice loading and error compomennt can be added for better experience
   if (loading) {
     return <Text>Loading...</Text>;
   }
